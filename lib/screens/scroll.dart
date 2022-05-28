@@ -31,14 +31,6 @@ Future<void> main() async {
     target.setStartTimeMinute(minutes);
   }
 
-  /*for (int i = 0; i < scoreboardList.length; i++) {
-    startDateYear.add(scoreboardList[i].gameStartDate.substring(0, 4));
-    startDateMonth.add(scoreboardList[i].gameStartDate.substring(5, 7));
-    startDateDay.add(scoreboardList[i].gameStartDate.substring(5, 7));
-    startTimeHours.add(scoreboardList[i].gameStartTime.substring(0, 2));
-    startTimeMinute.add(scoreboardList[i].gameStartTime.substring(3, 5));
-  }*/
-
   runApp(const MyApp());
 }
 
