@@ -13,7 +13,7 @@ class MyLocation{
       print(latitude2);
       print(longitude2);
     }catch(e){
-      print('There was a problem with the internet connection.');
+      print('인터넷 연결에 실패하였습니다.');
     }
   }
 }

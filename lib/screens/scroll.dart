@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:timer_builder/timer_builder.dart';
-import '../resBuilder2.dart';
-import '../plan2.dart' as plan2;
+import '../resBuilder.dart';
+import '../plan.dart' as plan2;
 import 'dart:core';
 
 List<ScoreboardListBuilder> scoreboardList;
@@ -161,14 +161,14 @@ class _ListViewPageState extends State<ListViewPage> {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width * 0.6;
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'ListView',
-          style: TextStyle(color: Colors.grey),
-        ),
-        backgroundColor: Colors.white,
-        elevation: 0,
-      ),
+      // appBar: AppBar(
+      //   title: const Text(
+      //     '경기 일정',
+      //     style: TextStyle(color: Colors.grey),
+      //   ),
+      //   backgroundColor: Colors.white,
+      //   elevation: 0,
+      // ),
       body: ListView.builder(
         itemCount: scoreboardList.length,
         itemBuilder: (context, index) {
@@ -206,7 +206,7 @@ class _ListViewPageState extends State<ListViewPage> {
                               Text(
                                   ":",
                                   style: const TextStyle(
-                                      fontSize: 22,
+                                      fontSize: 40,
                                       fontWeight: FontWeight.bold,
                                       color: Colors.grey
                                   )

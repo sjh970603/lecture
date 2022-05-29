@@ -83,7 +83,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
         child: Stack(
           children: [
             Image.asset(
-              'image/background2.jpg',
+              'image/background.png',
               fit: BoxFit.cover,
               width: double.infinity,
               height: double.infinity,
@@ -127,7 +127,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                                 Text(DateFormat(' - EEEE, ').format(date),
                                     style: GoogleFonts.lato(
                                         fontSize: 16.0, color: Colors.white)),
-                                Text(DateFormat('d MMM, yyy').format(date),
+                                Text(DateFormat('yyyy년 MMM월 d일').format(date),
                                     style: GoogleFonts.lato(
                                         fontSize: 16.0, color: Colors.white))
                               ],
@@ -138,7 +138,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              '$temp\u2103',
+                              '$temp°c',
                               style: GoogleFonts.lato(
                                   fontSize: 85.0,
                                   fontWeight: FontWeight.w300,
@@ -150,13 +150,13 @@ class _WeatherScreenState extends State<WeatherScreen> {
                                 SizedBox(
                                   width: 10.0,
                                 ),
-                                Text(
-                                  '$des',
-                                  style: GoogleFonts.lato(
-                                    fontSize: 16.0,
-                                    color: Colors.white,
-                                  ),
-                                ),
+                                // Text(
+                                //   '$des',
+                                //   style: GoogleFonts.lato(
+                                //     fontSize: 16.0,
+                                //     color: Colors.white,
+                                //   ),
+                                // ),
                               ],
                             )
                           ],
